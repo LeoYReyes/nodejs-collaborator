@@ -1,0 +1,155 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(238,238,238,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(238,238,238,0)));
+  background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(238,238,238,0) 100%);
+  background: -o-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(238,238,238,0) 100%);
+  background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(238,238,238,0) 100%);
+  background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(238,238,238,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#00eeeeee',GradientType=0 );
+}
+#tools {
+	position: absolute;
+	z-index: 1;
+}
+#tools #toolsContainer {
+	background-color: #999;
+	display: none;	
+	width: 500px;
+	height: 300px;
+	background-image: -webkit-gradient(linear,50% 0%,50%,100%,from(rgba(255,255,255,0.38)),to(rgba(255,255,255,0.16)));
+	background-repeat: repeat;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #343434;
+	-moz-border-radius: 28px;
+	-webkit-border-radius: 28px;
+	border-radius: 28px;
+	-moz-box-shadow: 1.4px 1px 2px #B1B1B1;
+	-webkit-box-shadow: 1.4px 1px 2px #B1B1B1;
+	box-shadow: 1.4px 1px 2px #B1B1B1;
+	margin-left: 10px;
+}
+#tools #toolsContainer #colorPalette {
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+#videos {
+  position: absolute;
+  width: 1000px;
+  height: 500px;
+  top: 0px;
+  left: 570px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+}
+
+#chatbox {
+  position: fixed;
+  right: 20px;
+  bottom:0px;
+  z-index: 1;
+}
+#drawboard {
+	background-color: #ffffff;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 50px;
+	border: 2px solid #000;
+	border-radius: 5px;
+	z-index:0;
+}
+#messageContainer {
+	display:none;
+	height: 0px;
+	margin-bottom: 55px;
+}
+#chatinput {
+  background: none repeat scroll 0 0 #F9F9F9;
+  border: 1px solid #CCCCCC;
+  border-radius: 0px 0px 5px 5px;
+  font: 300 18px/40px 'light','Helvetica Neue',Arial,Helvetica,sans-serif;
+  height: 10%;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+  padding: 5px 10px;
+  width: 277px;
+}
+#messages {
+	overflow: scroll;
+	background: none repeat scroll 0 0 #F9F9F9;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px 5px 0px 0px;
+	font: 300 18px/40px 'light','Helvetica Neue',Arial,Helvetica,sans-serif;
+	height: 100%;
+	letter-spacing: 1px;
+	margin-bottom: 0px;
+	width: 255px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+#videoFrame {
+	position: absolute;
+}
+#videoFrame #notMuted {
+	position: relative;
+	margin-top: 70px;
+	margin-left: 10px;
+	z-index: 3;
+	height: 32px;
+	width: 32px;
+}
+.flip {
+-webkit-transform: rotateY(180deg);
+	z-index: 2;
+}
+
+.buttonBox {
+	position: absolute;
+	z-index: 1;
+}
+.button {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #323232), color-stop(1, #000000) );
+  background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+  background-color: #141313;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  color: #0DE308;
+  font-family:arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+  background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+  background-color:#dfdfdf;
+}
+.button:active {
+  position:relative;
+  top:1px;
+}

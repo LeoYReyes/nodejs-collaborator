@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>videochat</title>
+    <link type="text/css" href="style.css" rel="stylesheet"></link>
+	<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="webrtc.io.js"></script>
+  </head>
+  <body onLoad="init()">
+    <div class="buttonBox">
+        <div id="fullscreen" class="button">Enter Full Screen</div>
+        
+        <div id="newRoom" class="button">Create A New Room</div>
+        
+        <div id="toolsButton" class="button">Tools</div>
+        <div id="tools">
+            <div id="toolsContainer">
+                <canvas id="colorPalette" width="500px" height="300px"></canvas>
+                <div id="clearcanvas" class="button" style="margin-left: 25px; margin-top: -19px;">Clear</div>
+            </div>
+        </div>
+        <div id="screenShare" class=button>Share Screen</div>
+      
+	</div>
+  <div id="fs">
+    <div id="videos">
+    	<div id="videoFrame" class="ui-draggable">
+        <img id="notMuted" src="images/NotMuted.png"/>
+      <video id="you" class="flip" autoplay></video>
+    	</div>
+        <div id="videoFrame" class="ui-draggable">
+      <video id="ss" autoplay></video>
+
+    	</div>
+    </div>
+    <div id="drawboard">
+    	<canvas id="canvas" width="500px" height="500px"></canvas>
+    </div>
+    <div id="chatbox">
+        <div id="chatbutton" class="button">Chat</div>
+            <div id="messageContainer">
+            	<div id="messages">
+            </div>
+            <input id="chatinput" type="text" placeholder="Message:"/>
+        </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
